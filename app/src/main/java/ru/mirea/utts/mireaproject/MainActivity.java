@@ -1,5 +1,6 @@
 package ru.mirea.utts.mireaproject;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.view.View;
@@ -20,6 +21,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
 import ru.mirea.utts.mireaproject.databinding.ActivityMainBinding;
+import ru.mirea.utts.mireaproject.fragments.MusicFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -45,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_calculator, R.id.nav_web)
+                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_calculator, R.id.nav_web, R.id.nav_music)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
@@ -96,5 +98,17 @@ public class MainActivity extends AppCompatActivity {
         } catch (Exception e) {
             textView.setText("Вы ввели некорректное выражение");
         }
+
+
+    }
+
+    public void onClickPlayMusic(View view) {
+        startService(
+                new Intent(MainActivity.this, MusicService.class));
+    }
+
+    public void onClickStopMusic(View view) {
+        stopService(
+                new Intent(MainActivity.this, MusicService.class));
     }
 }
