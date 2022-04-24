@@ -1,9 +1,11 @@
-package ru.mirea.utts.mireaproject;
+package ru.mirea.utts.mireaproject.services;
 
 import android.app.Service;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.IBinder;
+
+import ru.mirea.utts.mireaproject.R;
 
 public class MusicService extends Service {
     private MediaPlayer mediaPlayer;

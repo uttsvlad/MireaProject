@@ -25,5 +25,14 @@
         <item
             android:id="@+id/nav_music"
             android:title="Music" />
+        <item
+            android:id="@+id/nav_apparat"
+            android:title="Apparat" />
+        <item
+            android:id="@+id/nav_settings"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_stories"
+            android:title="Stories" />
     </group>
 </menu>

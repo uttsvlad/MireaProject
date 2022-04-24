@@ -47,7 +47,8 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_calculator, R.id.nav_web, R.id.nav_music)
+                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_calculator,
+                R.id.nav_web, R.id.nav_music, R.id.nav_apparat, R.id.nav_settings, R.id.nav_stories)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
@@ -67,48 +68,5 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
-    }
-
-    public void onClick(View view) {
-        EditText editText = findViewById(R.id.editText);
-        String vyr = editText.getText().toString();
-        String[] arr = vyr.split(" ");
-        TextView textView = findViewById(R.id.textView3);
-        double result = 0;
-
-        try {
-            double x = Double.parseDouble(arr[0]);
-            double y = Double.parseDouble(arr[2]);
-            switch (arr[1]) {
-                case "+":
-                    result = x + y;
-                    break;
-                case "-":
-                    result = x - y;
-                    break;
-                case "*":
-                    result = x * y;
-                    break;
-                case "/":
-                    result = x / y;
-                    break;
-            }
-
-            textView.setText(Double.toString(result));
-        } catch (Exception e) {
-            textView.setText("Вы ввели некорректное выражение");
-        }
-
-
-    }
-
-    public void onClickPlayMusic(View view) {
-        startService(
-                new Intent(MainActivity.this, MusicService.class));
-    }
-
-    public void onClickStopMusic(View view) {
-        stopService(
-                new Intent(MainActivity.this, MusicService.class));
     }
 }

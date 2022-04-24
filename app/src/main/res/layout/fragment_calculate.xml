@@ -17,7 +17,7 @@
             android:text="Введите выражение в виде: x + y" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/editTextCalculate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -26,15 +26,15 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/calculateButton"
             android:layout_width="match_parent"
-            android:onClick="onClick"
             android:layout_height="wrap_content"
+            android:onClick="onClickCalculate"
             android:text="Посчитать" />
 
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/textViewResult"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Результат" />
