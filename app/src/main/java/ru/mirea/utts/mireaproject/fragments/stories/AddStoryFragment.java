@@ -36,12 +36,12 @@ public class AddStoryFragment extends Fragment {
     public void onClickSaveStory(View view){
 
         AppDB db = App.getInstance().getDatabase();
-        StoryDAO historyDao = db.storyDAO();
+        StoryDAO storyDAO = db.storyDAO();
 
         Story story = new Story();
         story.story = storyEditText.getText().toString();
 
-        historyDao.insert(story);
+        storyDAO.insert(story);
 
 
         getActivity().getSupportFragmentManager().beginTransaction().remove(this).commit();

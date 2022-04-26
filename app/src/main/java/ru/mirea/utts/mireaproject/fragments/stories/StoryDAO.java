@@ -18,11 +18,11 @@ public interface StoryDAO {
     Story getById(long id);
 
     @Insert
-    void insert(Story history);
+    void insert(Story story);
 
     @Update
-    void update(Story history);
+    void update(Story story);
 
     @Delete
-    void delete(Story history);
+    void delete(Story story);
 }

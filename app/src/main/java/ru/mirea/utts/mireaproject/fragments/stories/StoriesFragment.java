@@ -29,36 +29,31 @@ public class StoriesFragment extends Fragment {
 
         recyclerView = view.findViewById(R.id.recyclerView);
 
-        //view.findViewById(R.id.add).setOnClickListener(this::onClickAddHistory);
-
         fab = view.findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                AddStoryFragment addHistoryFragment = new AddStoryFragment();
-                getActivity().getSupportFragmentManager().beginTransaction()
-                        .replace(((ViewGroup)getView().getParent()).getId(), addHistoryFragment, null)
-                        .addToBackStack(null)
-                        .commit();
-            }
+        fab.setOnClickListener(view1 -> {
+            AddStoryFragment addStoryFragment = new AddStoryFragment();
+            getActivity().getSupportFragmentManager().beginTransaction()
+                    .replace(((ViewGroup)getView().getParent()).getId(), addStoryFragment, null)
+                    .addToBackStack(null)
+                    .commit();
         });
 
         AppDB db = App.getInstance().getDatabase();
         StoryDAO storyDAO =  db.storyDAO();
 
-        List<Story> historyList = storyDAO.getAll();
+        List<Story> storyList = storyDAO.getAll();
 
-        StoryAdapter adapter =  new StoryAdapter(getActivity(), historyList);
+        StoryAdapter adapter =  new StoryAdapter(getActivity(), storyList);
         recyclerView.setAdapter(adapter);
 
         return view;
     }
 
-    public void onClickAddHistory(View view){
+    public void onClickAddStory(View view){
 
-        AddStoryFragment addHistoryFragment = new AddStoryFragment();
+        AddStoryFragment addStoryFragment = new AddStoryFragment();
         getActivity().getSupportFragmentManager().beginTransaction()
-                .replace(((ViewGroup)getView().getParent()).getId(), addHistoryFragment, "findThisFragment")
+                .replace(((ViewGroup)getView().getParent()).getId(), addStoryFragment, "findThisFragment")
                 .addToBackStack(null)
                 .commit();
 
