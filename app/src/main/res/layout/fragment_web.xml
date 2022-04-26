@@ -8,14 +8,14 @@ android:layout_height="match_parent">
 
     <WebView
         android:id="@+id/web_view"
-        android:layout_width="414dp"
-        android:layout_height="402dp"
+        android:layout_width="402dp"
+        android:layout_height="575dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.987" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/url_input"
@@ -25,12 +25,12 @@ android:layout_height="match_parent">
         android:inputType="text"
         android:minHeight="48dp"
         android:text=""
-        app:layout_constraintBottom_toTopOf="@+id/web_view"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.057" />
+        app:layout_constraintVertical_bias="0.857" />
 
     <Button
         android:id="@+id/search_button"
@@ -38,10 +38,10 @@ android:layout_height="match_parent">
         android:layout_height="wrap_content"
         android:onClick="onSearchButtonClick"
         android:text="Поиск"
-        app:layout_constraintBottom_toTopOf="@+id/web_view"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/url_input"
-        app:layout_constraintVertical_bias="0.156" />
+        app:layout_constraintVertical_bias="0.546" />
 </androidx.constraintlayout.widget.ConstraintLayout>

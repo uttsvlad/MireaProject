@@ -16,23 +16,33 @@
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_slideshow" />
+
         <item
             android:id="@+id/nav_calculator"
-            android:title="Calculator" />
+            android:title="@string/menu_calculator" />
+
         <item
             android:id="@+id/nav_web"
-            android:title="Web" />
+            android:title="@string/menu_web" />
+
         <item
             android:id="@+id/nav_music"
-            android:title="Music" />
+            android:title="@string/menu_music" />
+
         <item
             android:id="@+id/nav_apparat"
-            android:title="Apparat" />
+            android:title="@string/menu_apparat" />
+
         <item
             android:id="@+id/nav_settings"
-            android:title="Settings" />
+            android:title="@string/menu_settings" />
+
         <item
             android:id="@+id/nav_stories"
-            android:title="Stories" />
+            android:title="@string/menu_stories" />
+
+        <item
+            android:id="@+id/nav_ipInfo"
+            android:title="@string/menu_ipInfo" />
     </group>
 </menu>
