@@ -1,4 +1,4 @@
-package ru.mirea.utts.mireaproject.fragments.stories;
+package ru.mirea.utts.mireaproject.ui.fragments.stories;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;

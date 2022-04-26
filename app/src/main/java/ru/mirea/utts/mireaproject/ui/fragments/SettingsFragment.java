@@ -1,4 +1,4 @@
-package ru.mirea.utts.mireaproject.fragments;
+package ru.mirea.utts.mireaproject.ui.fragments;
 
 import static android.content.Context.MODE_PRIVATE;
 

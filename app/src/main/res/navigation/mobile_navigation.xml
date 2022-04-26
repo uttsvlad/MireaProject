@@ -25,43 +25,49 @@
 
     <fragment
         android:id="@+id/nav_calculator"
-        android:name="ru.mirea.utts.mireaproject.fragments.CalculateFragment"
+        android:name="ru.mirea.utts.mireaproject.ui.fragments.CalculateFragment"
         android:label="@string/menu_calculator"
         tools:layout="@layout/fragment_calculate" />
 
     <fragment
         android:id="@+id/nav_web"
-        android:name="ru.mirea.utts.mireaproject.fragments.WebFragment"
+        android:name="ru.mirea.utts.mireaproject.ui.fragments.WebFragment"
         android:label="@string/menu_web"
         tools:layout="@layout/fragment_web" />
 
     <fragment
         android:id="@+id/nav_music"
-        android:name="ru.mirea.utts.mireaproject.fragments.MusicFragment"
+        android:name="ru.mirea.utts.mireaproject.ui.fragments.MusicFragment"
         android:label="@string/menu_music"
         tools:layout="@layout/fragment_music" />
 
     <fragment
         android:id="@+id/nav_apparat"
-        android:name="ru.mirea.utts.mireaproject.fragments.ApparatFragment"
+        android:name="ru.mirea.utts.mireaproject.ui.fragments.ApparatFragment"
         android:label="@string/menu_apparat"
         tools:layout="@layout/fragment_apparat" />
 
     <fragment
         android:id="@+id/nav_settings"
-        android:name="ru.mirea.utts.mireaproject.fragments.SettingsFragment"
+        android:name="ru.mirea.utts.mireaproject.ui.fragments.SettingsFragment"
         android:label="@string/menu_settings"
         tools:layout="@layout/fragment_settings" />
 
     <fragment
         android:id="@+id/nav_stories"
-        android:name="ru.mirea.utts.mireaproject.fragments.stories.StoriesFragment"
+        android:name="ru.mirea.utts.mireaproject.ui.fragments.stories.StoriesFragment"
         android:label="@string/menu_stories"
         tools:layout="@layout/fragment_stories" />
 
     <fragment
         android:id="@+id/nav_ipInfo"
-        android:name="ru.mirea.utts.mireaproject.fragments.IpInfoFragment"
+        android:name="ru.mirea.utts.mireaproject.ui.fragments.IpInfoFragment"
         android:label="@string/menu_ipInfo"
         tools:layout="@layout/fragment_ip_info" />
+
+    <fragment
+        android:id="@+id/nav_maps"
+        android:name="ru.mirea.utts.mireaproject.ui.fragments.MapsFragment"
+        android:label="@string/menu_maps"
+        tools:layout="@layout/fragment_maps" />
 </navigation>

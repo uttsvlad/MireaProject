@@ -1,4 +1,4 @@
-package ru.mirea.utts.mireaproject.fragments;
+package ru.mirea.utts.mireaproject.ui.fragments;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
@@ -24,7 +24,6 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import ru.mirea.utts.mireaproject.MainActivity;
 import ru.mirea.utts.mireaproject.R;
 
 public class IpInfoFragment extends Fragment {

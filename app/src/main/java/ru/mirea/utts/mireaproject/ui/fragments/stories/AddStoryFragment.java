@@ -1,4 +1,4 @@
-package ru.mirea.utts.mireaproject.fragments.stories;
+package ru.mirea.utts.mireaproject.ui.fragments.stories;
 
 import android.os.Bundle;
 

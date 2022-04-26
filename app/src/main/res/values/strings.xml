@@ -17,6 +17,27 @@
     <string name="menu_settings">Settings</string>
     <string name="menu_stories">Stories</string>
     <string name="menu_ipInfo">Ip info</string>
+    <string name="menu_maps">Maps</string>
+
+    <string name="Mirea1">Кампус на Проспекте Вернадского, 78, 1947г.</string>
+    <string name="Mirea2">Кампус на Проспекте Вернадского, 86</string>
+    <string name="Mirea3">Кампус на улице Стромынка</string>
+    <string name="Mirea4">Кампус на улице Малая Пироговская</string>
+    <string name="Mirea5">Кампус на улице Соколиная Гора</string>
+    <string name="Mirea6">Колледж</string>
+    <string name="Mirea7">ВУЦ</string>
+    <string name="Mirea8">Филиал в г. Ставрополе</string>
+    <string name="Mirea9">Филиал в г. Фрязино</string>
+
+    <string name="Mirea1Snippet">Проспект Вернадского, д. 78, 55.6695953,37.4798824</string>
+    <string name="Mirea2Snippet">Проспект Вернадского, д. 86, 55.6618971,37.4745255"</string>
+    <string name="Mirea3Snippet">ул. Стромынка, д.20, 55.7938058,37.7000664</string>
+    <string name="Mirea4Snippet">ул. Малая Пироговская, д. 1, стр. 5, 55.7317977,37.5745506</string>
+    <string name="Mirea5Snippet">5-я улица Соколиной Горы, д. 22, 55.7648399,37.7392163</string>
+    <string name="Mirea6Snippet">1-й Щипковский переулок, д. 23, 55.7250254,37.6304868</string>
+    <string name="Mirea7Snippet">ул. Усачева, д.7/1 55.728676,37.5708812</string>
+    <string name="Mirea8Snippet">Проспект Кулакова, д. 8 в квартале 601, 45.0508385,41.9097125</string>
+    <string name="Mirea9Snippet">ул. Вокзальная, д.2а, 55.9604333,38.049562</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="label_emailpassword">Email/Password Authentication</string>

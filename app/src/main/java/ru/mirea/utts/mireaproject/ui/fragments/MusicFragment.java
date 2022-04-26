@@ -1,4 +1,4 @@
-package ru.mirea.utts.mireaproject.fragments;
+package ru.mirea.utts.mireaproject.ui.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
